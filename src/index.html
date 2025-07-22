@@ -1,13 +1,48 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Hello</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta charset="UTF-8" />
+  <title>T-Rex Page</title>
+  <style>
+    body {
+      background: #fef6e4;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      text-align: center;
+      padding: 2em;
+      color: #001858;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.2em;
+    }
+    .trex {
+      font-size: 5em;
+      animation: bounce 1.5s infinite;
+    }
+    .heart {
+      color: #ff5c8a;
+      font-size: 2em;
+      animation: pulse 1s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+    .footer {
+      margin-top: 2em;
+      font-size: 0.9em;
+      color: #8d99ae;
+    }
+  </style>
 </head>
 <body>
-  <app-root></app-root>
+  <h1>Meet T-Rex!</h1>
+  <div class="trex">🦖</div>
+  <p>This little dino just wants to say <span class="heart">♥</span> you’re awesome!</p>
+  <div class="footer">Made with dino-love 🦕</div>
 </body>
 </html>
